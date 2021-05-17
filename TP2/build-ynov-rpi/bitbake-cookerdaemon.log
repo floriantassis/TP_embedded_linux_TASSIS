@@ -1,0 +1,636 @@
+4788 18:19:52.818507 --- Starting bitbake server pid 4788 at 2021-05-16 18:19:52.818489 ---
+4788 18:19:52.824203 Started bitbake server pid 4788
+4788 18:19:52.824358 Entering server connection loop
+4788 18:19:52.824495 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+4788 18:19:52.824945 Processing Client
+4788 18:19:52.824975 Connecting Client
+4788 18:19:52.825222 Running command ['setFeatures', [2, 1]]
+4788 18:19:52.825290 Command Completed
+4788 18:19:52.825761 Running command ['updateConfig', {'abort': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SSH_AGENT_PID': '2030', 'PWD': '/home/florian/build-ynov-rpi', 'LOGNAME': 'florian', 'HOME': '/home/florian', 'BBPATH': '/home/florian/build-ynov-rpi', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'USER': 'florian', 'PATH': '/home/florian/yocto/poky/scripts:/home/florian/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/florian-G3-3500:@/tmp/.ICE-unix/2065,unix/florian-G3-3500:/tmp/.ICE-unix/2065', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LC_ADDRESS': 'fr_FR.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'fr_FR.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'LC_MONETARY': 'fr_FR.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'florian', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'fr_FR.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VTE_VERSION': '6003', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/180e8b4b_29d8_4dfa_b5e8_45eaafa44418', 'INVOCATION_ID': 'cecc1698a8c14fe6bcd22794e3afaede', 'MANAGERPID': '1808', 'GJS_DEBUG_OUTPUT': 'stderr', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.93', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TIME': 'fr_FR.UTF-8', 'JOURNAL_STREAM': '8:55551', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/florian/build-ynov-rpi', 'LC_NUMERIC': 'fr_FR.UTF-8', 'OLDPWD': '/home/florian/yocto', '_': '/home/florian/yocto/poky/bitbake/bin/bitbake-layers'}, ['/home/florian/yocto/poky/bitbake/bin/bitbake-layers', 'add-layer', '/home/florian/yocto/raspberrypi']]
+4788 18:19:53.101539 Command Completed
+4788 18:19:53.102261 Running command ['parseConfiguration']
+4788 18:19:53.103511 Command Completed
+4788 18:19:53.103797 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+4788 18:19:53.104060 Command Completed
+4788 18:19:53.104211 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+4788 18:19:53.104398 Command Completed
+4788 18:19:53.130293 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4788 18:19:53.130545 Command Completed
+4788 18:19:53.130756 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4788 18:19:53.130988 Command Completed
+4788 18:19:53.132261 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4788 18:19:53.132422 Command Completed
+4788 18:19:53.132560 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4788 18:19:53.132713 Command Completed
+4788 18:19:53.133757 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4788 18:19:53.133918 Command Completed
+4788 18:19:53.134237 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4788 18:19:53.134419 Command Completed
+4788 18:19:53.135066 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4788 18:19:53.135226 Command Completed
+4788 18:19:53.135349 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4788 18:19:53.135497 Command Completed
+4788 18:19:53.136018 Running command ['clientComplete']
+4788 18:19:53.136110 Command Completed
+4788 18:19:53.136834 Processing Client
+4788 18:19:53.136887 Disconnecting Client
+4788 18:19:53.137044 No timeout, exiting.
+4788 18:19:53.237704 Exiting
+4788 18:19:53.257327 Original lockfile contents: ['4788\n']
+4788 18:19:53.257867 Exiting as we could obtain the lock
+4817 18:21:00.515215 --- Starting bitbake server pid 4817 at 2021-05-16 18:21:00.515197 ---
+4817 18:21:00.520914 Started bitbake server pid 4817
+4817 18:21:00.521070 Entering server connection loop
+4817 18:21:00.521198 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+4817 18:21:00.521815 Processing Client
+4817 18:21:00.521846 Connecting Client
+4817 18:21:00.522091 Running command ['setFeatures', [2, 1]]
+4817 18:21:00.522158 Command Completed
+4817 18:21:00.522651 Running command ['updateConfig', {'abort': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SSH_AGENT_PID': '2030', 'PWD': '/home/florian/build-ynov-rpi', 'LOGNAME': 'florian', 'HOME': '/home/florian', 'BBPATH': '/home/florian/build-ynov-rpi', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'USER': 'florian', 'PATH': '/home/florian/yocto/poky/scripts:/home/florian/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/florian-G3-3500:@/tmp/.ICE-unix/2065,unix/florian-G3-3500:/tmp/.ICE-unix/2065', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LC_ADDRESS': 'fr_FR.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'fr_FR.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'LC_MONETARY': 'fr_FR.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'florian', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'fr_FR.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VTE_VERSION': '6003', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/180e8b4b_29d8_4dfa_b5e8_45eaafa44418', 'INVOCATION_ID': 'cecc1698a8c14fe6bcd22794e3afaede', 'MANAGERPID': '1808', 'GJS_DEBUG_OUTPUT': 'stderr', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.93', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TIME': 'fr_FR.UTF-8', 'JOURNAL_STREAM': '8:55551', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/florian/build-ynov-rpi', 'LC_NUMERIC': 'fr_FR.UTF-8', 'OLDPWD': '/home/florian/yocto', '_': '/home/florian/yocto/poky/bitbake/bin/bitbake-layers'}, ['/home/florian/yocto/poky/bitbake/bin/bitbake-layers', 'add-layer', '/home/florian/yocto/meta-raspberrypi']]
+4817 18:21:00.740417 Command Completed
+4817 18:21:00.740814 Running command ['parseConfiguration']
+4817 18:21:00.741429 Command Completed
+4817 18:21:00.741588 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+4817 18:21:00.741724 Command Completed
+4817 18:21:00.741879 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+4817 18:21:00.741996 Command Completed
+4817 18:21:00.746611 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4817 18:21:00.746750 Command Completed
+4817 18:21:00.746911 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4817 18:21:00.747068 Command Completed
+4817 18:21:00.748701 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4817 18:21:00.748815 Command Completed
+4817 18:21:00.748969 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4817 18:21:00.749105 Command Completed
+4817 18:21:00.749868 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4817 18:21:00.749981 Command Completed
+4817 18:21:00.750070 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4817 18:21:00.750194 Command Completed
+4817 18:21:00.750623 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4817 18:21:00.750736 Command Completed
+4817 18:21:00.750828 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4817 18:21:00.750934 Command Completed
+4817 18:21:00.753424 Running command ['parseConfiguration']
+4817 18:21:00.753667 Command Completed
+4817 18:21:00.753885 Running command ['clientComplete']
+4817 18:21:00.753946 Command Completed
+4817 18:21:00.754450 Processing Client
+4817 18:21:00.754485 Disconnecting Client
+4817 18:21:00.754783 No timeout, exiting.
+4817 18:21:00.855175 Exiting
+4817 18:21:00.872949 Original lockfile contents: ['4817\n']
+4817 18:21:00.874197 Exiting as we could obtain the lock
+4848 18:21:19.382044 --- Starting bitbake server pid 4848 at 2021-05-16 18:21:19.382026 ---
+4848 18:21:19.387700 Started bitbake server pid 4848
+4848 18:21:19.387860 Entering server connection loop
+4848 18:21:19.387984 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+4848 18:21:19.388580 Processing Client
+4848 18:21:19.388613 Connecting Client
+4848 18:21:19.388864 Running command ['setFeatures', [2, 1]]
+4848 18:21:19.388930 Command Completed
+4848 18:21:19.389433 Running command ['updateConfig', {'abort': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SSH_AGENT_PID': '2030', 'PWD': '/home/florian/build-ynov-rpi', 'LOGNAME': 'florian', 'HOME': '/home/florian', 'BBPATH': '/home/florian/build-ynov-rpi', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'USER': 'florian', 'PATH': '/home/florian/yocto/poky/scripts:/home/florian/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/florian-G3-3500:@/tmp/.ICE-unix/2065,unix/florian-G3-3500:/tmp/.ICE-unix/2065', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LC_ADDRESS': 'fr_FR.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'fr_FR.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'LC_MONETARY': 'fr_FR.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'florian', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'fr_FR.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VTE_VERSION': '6003', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/180e8b4b_29d8_4dfa_b5e8_45eaafa44418', 'INVOCATION_ID': 'cecc1698a8c14fe6bcd22794e3afaede', 'MANAGERPID': '1808', 'GJS_DEBUG_OUTPUT': 'stderr', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.93', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TIME': 'fr_FR.UTF-8', 'JOURNAL_STREAM': '8:55551', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/florian/build-ynov-rpi', 'LC_NUMERIC': 'fr_FR.UTF-8', 'OLDPWD': '/home/florian/yocto', '_': '/home/florian/yocto/poky/bitbake/bin/bitbake-layers'}, ['/home/florian/yocto/poky/bitbake/bin/bitbake-layers', 'add-layer', '/home/florian/yocto/meta-openembedded/meta-oe']]
+4848 18:21:19.608733 Command Completed
+4848 18:21:19.609125 Running command ['parseConfiguration']
+4848 18:21:19.609802 Command Completed
+4848 18:21:19.609959 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+4848 18:21:19.610123 Command Completed
+4848 18:21:19.610270 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+4848 18:21:19.610388 Command Completed
+4848 18:21:19.614837 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4848 18:21:19.614990 Command Completed
+4848 18:21:19.615104 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4848 18:21:19.615241 Command Completed
+4848 18:21:19.616136 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4848 18:21:19.616223 Command Completed
+4848 18:21:19.616301 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4848 18:21:19.616402 Command Completed
+4848 18:21:19.617948 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4848 18:21:19.618060 Command Completed
+4848 18:21:19.618211 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4848 18:21:19.618341 Command Completed
+4848 18:21:19.618779 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4848 18:21:19.618890 Command Completed
+4848 18:21:19.618975 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4848 18:21:19.619080 Command Completed
+4848 18:21:19.620973 Running command ['parseConfiguration']
+4848 18:21:19.621207 Command Completed
+4848 18:21:19.621391 Running command ['clientComplete']
+4848 18:21:19.621454 Command Completed
+4848 18:21:19.622126 Processing Client
+4848 18:21:19.622162 Disconnecting Client
+4848 18:21:19.622282 No timeout, exiting.
+4848 18:21:19.722696 Exiting
+4848 18:21:19.741321 Original lockfile contents: ['4848\n']
+4848 18:21:19.742531 Exiting as we could obtain the lock
+4855 18:21:30.320765 --- Starting bitbake server pid 4855 at 2021-05-16 18:21:30.320748 ---
+4855 18:21:30.326352 Started bitbake server pid 4855
+4855 18:21:30.326510 Entering server connection loop
+4855 18:21:30.326637 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+4855 18:21:30.327252 Processing Client
+4855 18:21:30.327281 Connecting Client
+4855 18:21:30.327527 Running command ['setFeatures', [2, 1]]
+4855 18:21:30.327594 Command Completed
+4855 18:21:30.328136 Running command ['updateConfig', {'abort': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SSH_AGENT_PID': '2030', 'PWD': '/home/florian/build-ynov-rpi', 'LOGNAME': 'florian', 'HOME': '/home/florian', 'BBPATH': '/home/florian/build-ynov-rpi', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'USER': 'florian', 'PATH': '/home/florian/yocto/poky/scripts:/home/florian/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/florian-G3-3500:@/tmp/.ICE-unix/2065,unix/florian-G3-3500:/tmp/.ICE-unix/2065', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LC_ADDRESS': 'fr_FR.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'fr_FR.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'LC_MONETARY': 'fr_FR.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'florian', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'fr_FR.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VTE_VERSION': '6003', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/180e8b4b_29d8_4dfa_b5e8_45eaafa44418', 'INVOCATION_ID': 'cecc1698a8c14fe6bcd22794e3afaede', 'MANAGERPID': '1808', 'GJS_DEBUG_OUTPUT': 'stderr', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.93', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TIME': 'fr_FR.UTF-8', 'JOURNAL_STREAM': '8:55551', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/florian/build-ynov-rpi', 'LC_NUMERIC': 'fr_FR.UTF-8', 'OLDPWD': '/home/florian/yocto', '_': '/home/florian/yocto/poky/bitbake/bin/bitbake-layers'}, ['/home/florian/yocto/poky/bitbake/bin/bitbake-layers', 'add-layer', '/home/yelmernissi/git/yocto/meta-openembedded/meta-networking']]
+4855 18:21:30.549548 Command Completed
+4855 18:21:30.549944 Running command ['parseConfiguration']
+4855 18:21:30.550729 Command Completed
+4855 18:21:30.550862 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+4855 18:21:30.551001 Command Completed
+4855 18:21:30.551105 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+4855 18:21:30.551218 Command Completed
+4855 18:21:30.556454 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4855 18:21:30.556597 Command Completed
+4855 18:21:30.556753 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4855 18:21:30.556919 Command Completed
+4855 18:21:30.557833 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4855 18:21:30.557946 Command Completed
+4855 18:21:30.558099 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4855 18:21:30.558237 Command Completed
+4855 18:21:30.559197 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4855 18:21:30.559311 Command Completed
+4855 18:21:30.559397 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4855 18:21:30.559511 Command Completed
+4855 18:21:30.559924 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4855 18:21:30.560037 Command Completed
+4855 18:21:30.560123 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4855 18:21:30.560231 Command Completed
+4855 18:21:30.560634 Running command ['clientComplete']
+4855 18:21:30.560699 Command Completed
+4855 18:21:30.561369 Processing Client
+4855 18:21:30.561409 Disconnecting Client
+4855 18:21:30.561522 No timeout, exiting.
+4855 18:21:30.661910 Exiting
+4855 18:21:30.681248 Original lockfile contents: ['4855\n']
+4855 18:21:30.682474 Exiting as we could obtain the lock
+4862 18:21:59.878175 --- Starting bitbake server pid 4862 at 2021-05-16 18:21:59.878158 ---
+4862 18:21:59.883797 Started bitbake server pid 4862
+4862 18:21:59.883958 Entering server connection loop
+4862 18:21:59.884088 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+4862 18:21:59.884703 Processing Client
+4862 18:21:59.884735 Connecting Client
+4862 18:21:59.884984 Running command ['setFeatures', [2, 1]]
+4862 18:21:59.885051 Command Completed
+4862 18:21:59.885546 Running command ['updateConfig', {'abort': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SSH_AGENT_PID': '2030', 'PWD': '/home/florian/build-ynov-rpi', 'LOGNAME': 'florian', 'HOME': '/home/florian', 'BBPATH': '/home/florian/build-ynov-rpi', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'USER': 'florian', 'PATH': '/home/florian/yocto/poky/scripts:/home/florian/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/florian-G3-3500:@/tmp/.ICE-unix/2065,unix/florian-G3-3500:/tmp/.ICE-unix/2065', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LC_ADDRESS': 'fr_FR.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'fr_FR.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'LC_MONETARY': 'fr_FR.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'florian', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'fr_FR.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VTE_VERSION': '6003', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/180e8b4b_29d8_4dfa_b5e8_45eaafa44418', 'INVOCATION_ID': 'cecc1698a8c14fe6bcd22794e3afaede', 'MANAGERPID': '1808', 'GJS_DEBUG_OUTPUT': 'stderr', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.93', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TIME': 'fr_FR.UTF-8', 'JOURNAL_STREAM': '8:55551', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/florian/build-ynov-rpi', 'LC_NUMERIC': 'fr_FR.UTF-8', 'OLDPWD': '/home/florian/yocto', '_': '/home/florian/yocto/poky/bitbake/bin/bitbake-layers'}, ['/home/florian/yocto/poky/bitbake/bin/bitbake-layers', 'add-layer', '/home/florian/yocto/meta-openembedded/meta-networking']]
+4862 18:22:00.108031 Command Completed
+4862 18:22:00.108805 Running command ['parseConfiguration']
+4862 18:22:00.109667 Command Completed
+4862 18:22:00.109835 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+4862 18:22:00.109979 Command Completed
+4862 18:22:00.110115 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+4862 18:22:00.110226 Command Completed
+4862 18:22:00.115464 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4862 18:22:00.115598 Command Completed
+4862 18:22:00.115708 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4862 18:22:00.115851 Command Completed
+4862 18:22:00.116867 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4862 18:22:00.116979 Command Completed
+4862 18:22:00.117133 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4862 18:22:00.117271 Command Completed
+4862 18:22:00.118045 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4862 18:22:00.118156 Command Completed
+4862 18:22:00.118243 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4862 18:22:00.118350 Command Completed
+4862 18:22:00.118724 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+4862 18:22:00.118810 Command Completed
+4862 18:22:00.118887 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+4862 18:22:00.118985 Command Completed
+4862 18:22:00.121956 Running command ['parseConfiguration']
+4862 18:22:00.122199 Command Completed
+4862 18:22:00.122395 Running command ['clientComplete']
+4862 18:22:00.122458 Command Completed
+4862 18:22:00.123121 Processing Client
+4862 18:22:00.123159 Disconnecting Client
+4862 18:22:00.123279 No timeout, exiting.
+4862 18:22:00.223674 Exiting
+4862 18:22:00.245295 Original lockfile contents: ['4862\n']
+4862 18:22:00.246555 Exiting as we could obtain the lock
+4897 18:22:13.458547 --- Starting bitbake server pid 4897 at 2021-05-16 18:22:13.458528 ---
+4897 18:22:13.464115 Started bitbake server pid 4897
+4897 18:22:13.464273 Entering server connection loop
+4897 18:22:13.464402 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+4897 18:22:13.464988 Processing Client
+4897 18:22:13.465024 Connecting Client
+4897 18:22:13.465280 Running command ['setFeatures', [2, 1]]
+4897 18:22:13.465350 Command Completed
+4897 18:22:13.465859 Running command ['updateConfig', {'abort': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SSH_AGENT_PID': '2030', 'PWD': '/home/florian/build-ynov-rpi', 'LOGNAME': 'florian', 'HOME': '/home/florian', 'BBPATH': '/home/florian/build-ynov-rpi', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'USER': 'florian', 'PATH': '/home/florian/yocto/poky/scripts:/home/florian/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/florian-G3-3500:@/tmp/.ICE-unix/2065,unix/florian-G3-3500:/tmp/.ICE-unix/2065', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LC_ADDRESS': 'fr_FR.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'fr_FR.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'LC_MONETARY': 'fr_FR.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'florian', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'fr_FR.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VTE_VERSION': '6003', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/180e8b4b_29d8_4dfa_b5e8_45eaafa44418', 'INVOCATION_ID': 'cecc1698a8c14fe6bcd22794e3afaede', 'MANAGERPID': '1808', 'GJS_DEBUG_OUTPUT': 'stderr', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.93', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TIME': 'fr_FR.UTF-8', 'JOURNAL_STREAM': '8:55551', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/florian/build-ynov-rpi', 'LC_NUMERIC': 'fr_FR.UTF-8', 'OLDPWD': '/home/florian/yocto', '_': '/home/florian/yocto/poky/bitbake/bin/bitbake-layers'}, ['/home/florian/yocto/poky/bitbake/bin/bitbake-layers', 'add-layer', '/home/florian/yocto/meta-openembedded/meta-python']]
+4897 18:22:13.692025 Command Completed
+4897 18:22:13.692419 Running command ['parseConfiguration']
+4897 18:22:13.693980 Command Completed
+4897 18:22:13.694182 Running command ['clientComplete']
+4897 18:22:13.694237 Command Completed
+4897 18:22:13.694887 Processing Client
+4897 18:22:13.694923 Disconnecting Client
+4897 18:22:13.695309 No timeout, exiting.
+4897 18:22:13.795602 Exiting
+4897 18:22:13.816811 Original lockfile contents: ['4897\n']
+4897 18:22:13.818035 Exiting as we could obtain the lock
+4922 18:22:52.769439 --- Starting bitbake server pid 4922 at 2021-05-16 18:22:52.769421 ---
+4922 18:22:52.775061 Started bitbake server pid 4922
+4922 18:22:52.775215 Entering server connection loop
+4922 18:22:52.775347 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+4922 18:22:52.775973 Processing Client
+4922 18:22:52.776003 Connecting Client
+4922 18:22:52.776252 Running command ['setFeatures', [2, 1]]
+4922 18:22:52.776319 Command Completed
+4922 18:22:52.776789 Running command ['updateConfig', {'abort': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SSH_AGENT_PID': '2030', 'PWD': '/home/florian/build-ynov-rpi', 'LOGNAME': 'florian', 'HOME': '/home/florian', 'BBPATH': '/home/florian/build-ynov-rpi', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'USER': 'florian', 'PATH': '/home/florian/yocto/poky/scripts:/home/florian/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/florian-G3-3500:@/tmp/.ICE-unix/2065,unix/florian-G3-3500:/tmp/.ICE-unix/2065', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LC_ADDRESS': 'fr_FR.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'fr_FR.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'LC_MONETARY': 'fr_FR.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'florian', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'fr_FR.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VTE_VERSION': '6003', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/180e8b4b_29d8_4dfa_b5e8_45eaafa44418', 'INVOCATION_ID': 'cecc1698a8c14fe6bcd22794e3afaede', 'MANAGERPID': '1808', 'GJS_DEBUG_OUTPUT': 'stderr', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.93', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TIME': 'fr_FR.UTF-8', 'JOURNAL_STREAM': '8:55551', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/florian/build-ynov-rpi', 'LC_NUMERIC': 'fr_FR.UTF-8', 'OLDPWD': '/home/florian/yocto', '_': '/home/florian/yocto/poky/bitbake/bin/bitbake-layers'}, ['/home/florian/yocto/poky/bitbake/bin/bitbake-layers', 'add-layer', '/home/florian/yocto/meta-openembedded/meta-filesystems']]
+4922 18:22:52.999152 Command Completed
+4922 18:22:52.999538 Running command ['parseConfiguration']
+4922 18:22:53.001112 Command Completed
+4922 18:22:53.001315 Running command ['clientComplete']
+4922 18:22:53.001369 Command Completed
+4922 18:22:53.001992 Processing Client
+4922 18:22:53.002029 Disconnecting Client
+4922 18:22:53.002149 No timeout, exiting.
+4922 18:22:53.102641 Exiting
+4922 18:22:53.120935 Original lockfile contents: ['4922\n']
+4922 18:22:53.122145 Exiting as we could obtain the lock
+4937 18:23:12.417856 --- Starting bitbake server pid 4937 at 2021-05-16 18:23:12.417839 ---
+4937 18:23:12.423465 Started bitbake server pid 4937
+4937 18:23:12.423622 Entering server connection loop
+4937 18:23:12.423744 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+4937 18:23:12.424340 Processing Client
+4937 18:23:12.424368 Connecting Client
+4937 18:23:12.424619 Running command ['setFeatures', [2, 1]]
+4937 18:23:12.424688 Command Completed
+4937 18:23:12.425192 Running command ['updateConfig', {'abort': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SSH_AGENT_PID': '2030', 'PWD': '/home/florian/build-ynov-rpi', 'LOGNAME': 'florian', 'HOME': '/home/florian', 'BBPATH': '/home/florian/build-ynov-rpi', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'USER': 'florian', 'PATH': '/home/florian/yocto/poky/scripts:/home/florian/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/florian-G3-3500:@/tmp/.ICE-unix/2065,unix/florian-G3-3500:/tmp/.ICE-unix/2065', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LC_ADDRESS': 'fr_FR.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'fr_FR.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'LC_MONETARY': 'fr_FR.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'florian', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'fr_FR.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VTE_VERSION': '6003', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/180e8b4b_29d8_4dfa_b5e8_45eaafa44418', 'INVOCATION_ID': 'cecc1698a8c14fe6bcd22794e3afaede', 'MANAGERPID': '1808', 'GJS_DEBUG_OUTPUT': 'stderr', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.93', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TIME': 'fr_FR.UTF-8', 'JOURNAL_STREAM': '8:55551', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/florian/build-ynov-rpi', 'LC_NUMERIC': 'fr_FR.UTF-8', 'OLDPWD': '/home/florian/yocto', '_': '/home/florian/yocto/poky/bitbake/bin/bitbake-layers'}, ['/home/florian/yocto/poky/bitbake/bin/bitbake-layers', 'add-layer', '/home/florian/yocto/meta-openembedded/meta-python']]
+4937 18:23:12.656820 Command Completed
+4937 18:23:12.657237 Running command ['parseConfiguration']
+4937 18:23:12.658768 Command Completed
+4937 18:23:12.658974 Running command ['clientComplete']
+4937 18:23:12.659034 Command Completed
+4937 18:23:12.659882 Processing Client
+4937 18:23:12.659928 Disconnecting Client
+4937 18:23:12.660082 No timeout, exiting.
+4937 18:23:12.760528 Exiting
+4937 18:23:12.781268 Original lockfile contents: ['4937\n']
+4937 18:23:12.782517 Exiting as we could obtain the lock
+12534 21:37:19.890929 --- Starting bitbake server pid 12534 at 2021-05-16 21:37:19.890910 ---
+12534 21:37:19.896552 Started bitbake server pid 12534
+12534 21:37:19.896723 Entering server connection loop
+12534 21:37:19.896855 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+12534 21:37:19.897360 Processing Client
+12534 21:37:19.897388 Connecting Client
+12534 21:37:19.897636 Running command ['setFeatures', [2, 1]]
+12534 21:37:19.897707 Command Completed
+12534 21:37:19.898158 Running command ['updateConfig', {'abort': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SSH_AGENT_PID': '2030', 'PWD': '/home/florian/build-ynov-rpi', 'LOGNAME': 'florian', 'HOME': '/home/florian', 'BBPATH': '/home/florian/build-ynov-rpi', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'USER': 'florian', 'PATH': '/home/florian/yocto/poky/scripts:/home/florian/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/florian-G3-3500:@/tmp/.ICE-unix/2065,unix/florian-G3-3500:/tmp/.ICE-unix/2065', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LC_ADDRESS': 'fr_FR.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'fr_FR.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'LC_MONETARY': 'fr_FR.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'florian', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'fr_FR.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VTE_VERSION': '6003', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/180e8b4b_29d8_4dfa_b5e8_45eaafa44418', 'INVOCATION_ID': 'cecc1698a8c14fe6bcd22794e3afaede', 'MANAGERPID': '1808', 'GJS_DEBUG_OUTPUT': 'stderr', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.93', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TIME': 'fr_FR.UTF-8', 'JOURNAL_STREAM': '8:55551', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/florian/build-ynov-rpi', 'LC_NUMERIC': 'fr_FR.UTF-8', 'OLDPWD': '/home/florian/yocto', '_': '/home/florian/yocto/poky/bitbake/bin/bitbake-layers'}, ['/home/florian/yocto/poky/bitbake/bin/bitbake-layers', 'add-layer', '/home/florian/yocto/meta-openembedded/meta-python']]
+12534 21:37:20.131845 Command Completed
+12534 21:37:20.132224 Running command ['parseConfiguration']
+12534 21:37:20.133103 Command Completed
+12534 21:37:20.133221 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+12534 21:37:20.133356 Command Completed
+12534 21:37:20.133440 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+12534 21:37:20.133546 Command Completed
+12534 21:37:20.138565 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+12534 21:37:20.138702 Command Completed
+12534 21:37:20.138789 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+12534 21:37:20.138934 Command Completed
+12534 21:37:20.139608 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+12534 21:37:20.139694 Command Completed
+12534 21:37:20.139771 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+12534 21:37:20.139877 Command Completed
+12534 21:37:20.141460 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+12534 21:37:20.141571 Command Completed
+12534 21:37:20.141656 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+12534 21:37:20.141764 Command Completed
+12534 21:37:20.142182 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+12534 21:37:20.142291 Command Completed
+12534 21:37:20.142376 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+12534 21:37:20.142483 Command Completed
+12534 21:37:20.143534 Running command ['parseConfiguration']
+12534 21:37:20.143771 Command Completed
+12534 21:37:20.143897 Running command ['clientComplete']
+12534 21:37:20.143946 Command Completed
+12534 21:37:20.144424 Processing Client
+12534 21:37:20.144464 Disconnecting Client
+12534 21:37:20.144593 No timeout, exiting.
+12534 21:37:20.244853 Exiting
+12534 21:37:20.260741 Original lockfile contents: ['12534\n']
+12534 21:37:20.261021 Exiting as we could obtain the lock
+13421 21:37:45.273816 --- Starting bitbake server pid 13421 at 2021-05-16 21:37:45.273796 ---
+13421 21:37:45.279496 Started bitbake server pid 13421
+13421 21:37:45.279655 Entering server connection loop
+13421 21:37:45.279783 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+13421 21:37:45.280389 Processing Client
+13421 21:37:45.280428 Connecting Client
+13421 21:37:45.280699 Running command ['setFeatures', [2, 1]]
+13421 21:37:45.280768 Command Completed
+13421 21:37:45.281319 Running command ['updateConfig', {'abort': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SSH_AGENT_PID': '2030', 'PWD': '/home/florian/build-ynov-rpi', 'LOGNAME': 'florian', 'HOME': '/home/florian', 'BBPATH': '/home/florian/build-ynov-rpi', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'USER': 'florian', 'PATH': '/home/florian/yocto/poky/scripts:/home/florian/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/florian-G3-3500:@/tmp/.ICE-unix/2065,unix/florian-G3-3500:/tmp/.ICE-unix/2065', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LC_ADDRESS': 'fr_FR.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'fr_FR.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'LC_MONETARY': 'fr_FR.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'florian', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'fr_FR.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VTE_VERSION': '6003', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/180e8b4b_29d8_4dfa_b5e8_45eaafa44418', 'INVOCATION_ID': 'cecc1698a8c14fe6bcd22794e3afaede', 'MANAGERPID': '1808', 'GJS_DEBUG_OUTPUT': 'stderr', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.93', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TIME': 'fr_FR.UTF-8', 'JOURNAL_STREAM': '8:55551', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/florian/build-ynov-rpi', 'LC_NUMERIC': 'fr_FR.UTF-8', 'OLDPWD': '/home/florian/yocto', '_': '/home/florian/yocto/poky/bitbake/bin/bitbake-layers'}, ['/home/florian/yocto/poky/bitbake/bin/bitbake-layers', 'add-layer', '/home/florian/yocto/meta-openembedded/meta-filesystems']]
+13421 21:37:45.505092 Command Completed
+13421 21:37:45.505475 Running command ['parseConfiguration']
+13421 21:37:45.506683 Command Completed
+13421 21:37:45.506843 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+13421 21:37:45.506977 Command Completed
+13421 21:37:45.507108 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+13421 21:37:45.507217 Command Completed
+13421 21:37:45.512043 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13421 21:37:45.512176 Command Completed
+13421 21:37:45.512270 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13421 21:37:45.512424 Command Completed
+13421 21:37:45.513176 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13421 21:37:45.513289 Command Completed
+13421 21:37:45.513440 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13421 21:37:45.513586 Command Completed
+13421 21:37:45.515241 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13421 21:37:45.515354 Command Completed
+13421 21:37:45.515442 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13421 21:37:45.515554 Command Completed
+13421 21:37:45.515938 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13421 21:37:45.516026 Command Completed
+13421 21:37:45.516105 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13421 21:37:45.516211 Command Completed
+13421 21:37:45.520801 Running command ['parseConfiguration']
+13421 21:37:45.521627 Command Completed
+13421 21:37:45.522189 Running command ['clientComplete']
+13421 21:37:45.522374 Command Completed
+13421 21:37:45.523552 Processing Client
+13421 21:37:45.523634 Disconnecting Client
+13421 21:37:45.523882 No timeout, exiting.
+13421 21:37:45.624368 Exiting
+13421 21:37:45.645005 Original lockfile contents: ['13421\n']
+13421 21:37:45.646200 Exiting as we could obtain the lock
+13429 21:38:03.244566 --- Starting bitbake server pid 13429 at 2021-05-16 21:38:03.244547 ---
+13429 21:38:03.250384 Started bitbake server pid 13429
+13429 21:38:03.250539 Entering server connection loop
+13429 21:38:03.250664 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+13429 21:38:03.251284 Processing Client
+13429 21:38:03.251314 Connecting Client
+13429 21:38:03.251560 Running command ['setFeatures', [2, 1]]
+13429 21:38:03.251634 Command Completed
+13429 21:38:03.252136 Running command ['updateConfig', {'abort': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SSH_AGENT_PID': '2030', 'PWD': '/home/florian/build-ynov-rpi', 'LOGNAME': 'florian', 'HOME': '/home/florian', 'BBPATH': '/home/florian/build-ynov-rpi', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'USER': 'florian', 'PATH': '/home/florian/yocto/poky/scripts:/home/florian/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/florian-G3-3500:@/tmp/.ICE-unix/2065,unix/florian-G3-3500:/tmp/.ICE-unix/2065', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LC_ADDRESS': 'fr_FR.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'fr_FR.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'LC_MONETARY': 'fr_FR.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'florian', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'fr_FR.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VTE_VERSION': '6003', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/180e8b4b_29d8_4dfa_b5e8_45eaafa44418', 'INVOCATION_ID': 'cecc1698a8c14fe6bcd22794e3afaede', 'MANAGERPID': '1808', 'GJS_DEBUG_OUTPUT': 'stderr', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.93', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TIME': 'fr_FR.UTF-8', 'JOURNAL_STREAM': '8:55551', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/florian/build-ynov-rpi', 'LC_NUMERIC': 'fr_FR.UTF-8', 'OLDPWD': '/home/florian/yocto', '_': '/home/florian/yocto/poky/bitbake/bin/bitbake-layers'}, ['/home/florian/yocto/poky/bitbake/bin/bitbake-layers', 'add-layer', '/home/florian/yocto/meta-openembedded/meta-multimedia']]
+13429 21:38:03.479366 Command Completed
+13429 21:38:03.479754 Running command ['parseConfiguration']
+13429 21:38:03.481109 Command Completed
+13429 21:38:03.481307 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+13429 21:38:03.481602 Command Completed
+13429 21:38:03.481779 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+13429 21:38:03.481919 Command Completed
+13429 21:38:03.486667 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13429 21:38:03.486800 Command Completed
+13429 21:38:03.486919 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13429 21:38:03.487069 Command Completed
+13429 21:38:03.488787 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13429 21:38:03.488902 Command Completed
+13429 21:38:03.489055 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13429 21:38:03.489195 Command Completed
+13429 21:38:03.489970 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13429 21:38:03.490082 Command Completed
+13429 21:38:03.490233 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13429 21:38:03.490370 Command Completed
+13429 21:38:03.490784 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13429 21:38:03.490875 Command Completed
+13429 21:38:03.490958 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13429 21:38:03.491066 Command Completed
+13429 21:38:03.493453 Running command ['parseConfiguration']
+13429 21:38:03.493749 Command Completed
+13429 21:38:03.493966 Running command ['clientComplete']
+13429 21:38:03.494031 Command Completed
+13429 21:38:03.494559 Processing Client
+13429 21:38:03.494596 Disconnecting Client
+13429 21:38:03.494714 No timeout, exiting.
+13429 21:38:03.595127 Exiting
+13429 21:38:03.620816 Original lockfile contents: ['13429\n']
+13429 21:38:03.622005 Exiting as we could obtain the lock
+13463 21:38:21.410266 --- Starting bitbake server pid 13463 at 2021-05-16 21:38:21.410247 ---
+13463 21:38:21.415921 Started bitbake server pid 13463
+13463 21:38:21.416077 Entering server connection loop
+13463 21:38:21.416205 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+13463 21:38:21.416816 Processing Client
+13463 21:38:21.416851 Connecting Client
+13463 21:38:21.417098 Running command ['setFeatures', [2, 1]]
+13463 21:38:21.417169 Command Completed
+13463 21:38:21.417672 Running command ['updateConfig', {'abort': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SSH_AGENT_PID': '2030', 'PWD': '/home/florian/build-ynov-rpi', 'LOGNAME': 'florian', 'HOME': '/home/florian', 'BBPATH': '/home/florian/build-ynov-rpi', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'USER': 'florian', 'PATH': '/home/florian/yocto/poky/scripts:/home/florian/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/florian-G3-3500:@/tmp/.ICE-unix/2065,unix/florian-G3-3500:/tmp/.ICE-unix/2065', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LC_ADDRESS': 'fr_FR.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'fr_FR.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'LC_MONETARY': 'fr_FR.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'florian', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'fr_FR.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VTE_VERSION': '6003', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/180e8b4b_29d8_4dfa_b5e8_45eaafa44418', 'INVOCATION_ID': 'cecc1698a8c14fe6bcd22794e3afaede', 'MANAGERPID': '1808', 'GJS_DEBUG_OUTPUT': 'stderr', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.93', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TIME': 'fr_FR.UTF-8', 'JOURNAL_STREAM': '8:55551', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/florian/build-ynov-rpi', 'LC_NUMERIC': 'fr_FR.UTF-8', 'OLDPWD': '/home/florian/yocto', '_': '/home/florian/yocto/poky/bitbake/bin/bitbake-layers'}, ['/home/florian/yocto/poky/bitbake/bin/bitbake-layers', 'add-layer', '/home/florian/bachelor-embedded-linux/labs/lab2/meta-ynov-rpi4']]
+13463 21:38:21.658052 Command Completed
+13463 21:38:21.658455 Running command ['parseConfiguration']
+13463 21:38:21.660005 Command Completed
+13463 21:38:21.660169 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+13463 21:38:21.660303 Command Completed
+13463 21:38:21.660391 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+13463 21:38:21.660514 Command Completed
+13463 21:38:21.665162 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13463 21:38:21.665293 Command Completed
+13463 21:38:21.665450 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13463 21:38:21.665622 Command Completed
+13463 21:38:21.667256 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13463 21:38:21.667349 Command Completed
+13463 21:38:21.667452 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13463 21:38:21.667568 Command Completed
+13463 21:38:21.668459 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13463 21:38:21.668562 Command Completed
+13463 21:38:21.668709 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13463 21:38:21.668848 Command Completed
+13463 21:38:21.669349 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13463 21:38:21.669462 Command Completed
+13463 21:38:21.669570 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13463 21:38:21.669687 Command Completed
+13463 21:38:21.670100 Running command ['clientComplete']
+13463 21:38:21.670153 Command Completed
+13463 21:38:21.670656 Processing Client
+13463 21:38:21.670693 Disconnecting Client
+13463 21:38:21.670809 No timeout, exiting.
+13463 21:38:21.771106 Exiting
+13463 21:38:21.781209 Original lockfile contents: ['13463\n']
+13463 21:38:21.782463 Exiting as we could obtain the lock
+13502 21:39:47.093530 --- Starting bitbake server pid 13502 at 2021-05-16 21:39:47.093511 ---
+13502 21:39:47.099217 Started bitbake server pid 13502
+13502 21:39:47.099378 Entering server connection loop
+13502 21:39:47.099507 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+13502 21:39:47.100122 Processing Client
+13502 21:39:47.100151 Connecting Client
+13502 21:39:47.100403 Running command ['setFeatures', [2, 1]]
+13502 21:39:47.100478 Command Completed
+13502 21:39:47.100938 Running command ['updateConfig', {'abort': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SSH_AGENT_PID': '2030', 'PWD': '/home/florian/build-ynov-rpi', 'LOGNAME': 'florian', 'HOME': '/home/florian', 'BBPATH': '/home/florian/build-ynov-rpi', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'USER': 'florian', 'PATH': '/home/florian/yocto/poky/scripts:/home/florian/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/florian-G3-3500:@/tmp/.ICE-unix/2065,unix/florian-G3-3500:/tmp/.ICE-unix/2065', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LC_ADDRESS': 'fr_FR.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'fr_FR.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'LC_MONETARY': 'fr_FR.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'florian', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'fr_FR.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VTE_VERSION': '6003', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/180e8b4b_29d8_4dfa_b5e8_45eaafa44418', 'INVOCATION_ID': 'cecc1698a8c14fe6bcd22794e3afaede', 'MANAGERPID': '1808', 'GJS_DEBUG_OUTPUT': 'stderr', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.93', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TIME': 'fr_FR.UTF-8', 'JOURNAL_STREAM': '8:55551', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/florian/build-ynov-rpi', 'LC_NUMERIC': 'fr_FR.UTF-8', 'OLDPWD': '/home/florian/yocto', '_': '/home/florian/yocto/poky/bitbake/bin/bitbake-layers'}, ['/home/florian/yocto/poky/bitbake/bin/bitbake-layers', 'add-layer', '/home/docker-image/bachelor-embedded-linux/labs/lab2/meta-ynov-rpi4']]
+13502 21:39:47.326384 Command Completed
+13502 21:39:47.326783 Running command ['parseConfiguration']
+13502 21:39:47.328365 Command Completed
+13502 21:39:47.328555 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+13502 21:39:47.328750 Command Completed
+13502 21:39:47.328884 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+13502 21:39:47.329002 Command Completed
+13502 21:39:47.333687 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13502 21:39:47.333817 Command Completed
+13502 21:39:47.333933 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13502 21:39:47.334093 Command Completed
+13502 21:39:47.335703 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13502 21:39:47.335799 Command Completed
+13502 21:39:47.335903 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13502 21:39:47.336017 Command Completed
+13502 21:39:47.336904 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13502 21:39:47.337017 Command Completed
+13502 21:39:47.337105 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13502 21:39:47.337220 Command Completed
+13502 21:39:47.337712 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13502 21:39:47.337825 Command Completed
+13502 21:39:47.337913 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13502 21:39:47.338027 Command Completed
+13502 21:39:47.338385 Running command ['clientComplete']
+13502 21:39:47.338436 Command Completed
+13502 21:39:47.338936 Processing Client
+13502 21:39:47.338972 Disconnecting Client
+13502 21:39:47.339096 No timeout, exiting.
+13502 21:39:47.439483 Exiting
+13502 21:39:47.465306 Original lockfile contents: ['13502\n']
+13502 21:39:47.466582 Exiting as we could obtain the lock
+13513 21:39:55.908373 --- Starting bitbake server pid 13513 at 2021-05-16 21:39:55.908355 ---
+13513 21:39:55.914120 Started bitbake server pid 13513
+13513 21:39:55.914270 Entering server connection loop
+13513 21:39:55.914401 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+13513 21:39:55.915026 Processing Client
+13513 21:39:55.915057 Connecting Client
+13513 21:39:55.915304 Running command ['setFeatures', [2, 1]]
+13513 21:39:55.915370 Command Completed
+13513 21:39:55.915917 Running command ['updateConfig', {'abort': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SSH_AGENT_PID': '2030', 'PWD': '/home/florian/build-ynov-rpi', 'LOGNAME': 'florian', 'HOME': '/home/florian', 'BBPATH': '/home/florian/build-ynov-rpi', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'USER': 'florian', 'PATH': '/home/florian/yocto/poky/scripts:/home/florian/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/florian-G3-3500:@/tmp/.ICE-unix/2065,unix/florian-G3-3500:/tmp/.ICE-unix/2065', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LC_ADDRESS': 'fr_FR.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'fr_FR.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'LC_MONETARY': 'fr_FR.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'florian', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'fr_FR.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VTE_VERSION': '6003', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/180e8b4b_29d8_4dfa_b5e8_45eaafa44418', 'INVOCATION_ID': 'cecc1698a8c14fe6bcd22794e3afaede', 'MANAGERPID': '1808', 'GJS_DEBUG_OUTPUT': 'stderr', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.93', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TIME': 'fr_FR.UTF-8', 'JOURNAL_STREAM': '8:55551', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/florian/build-ynov-rpi', 'LC_NUMERIC': 'fr_FR.UTF-8', 'OLDPWD': '/home/florian/yocto', '_': '/home/florian/yocto/poky/bitbake/bin/bitbake-layers'}, ['/home/florian/yocto/poky/bitbake/bin/bitbake-layers', 'add-layer', '/home/florian/bachelor-embedded-linux/labs/lab2/meta-ynov-rpi4']]
+13513 21:39:56.143776 Command Completed
+13513 21:39:56.144175 Running command ['parseConfiguration']
+13513 21:39:56.145766 Command Completed
+13513 21:39:56.145926 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+13513 21:39:56.146063 Command Completed
+13513 21:39:56.146194 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+13513 21:39:56.146304 Command Completed
+13513 21:39:56.151900 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13513 21:39:56.152050 Command Completed
+13513 21:39:56.152146 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13513 21:39:56.152300 Command Completed
+13513 21:39:56.153268 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13513 21:39:56.153382 Command Completed
+13513 21:39:56.153531 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13513 21:39:56.153671 Command Completed
+13513 21:39:56.154449 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13513 21:39:56.154561 Command Completed
+13513 21:39:56.154667 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13513 21:39:56.154785 Command Completed
+13513 21:39:56.155192 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13513 21:39:56.155280 Command Completed
+13513 21:39:56.155359 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13513 21:39:56.155467 Command Completed
+13513 21:39:56.155885 Running command ['clientComplete']
+13513 21:39:56.155953 Command Completed
+13513 21:39:56.156479 Processing Client
+13513 21:39:56.156517 Disconnecting Client
+13513 21:39:56.156631 No timeout, exiting.
+13513 21:39:56.256942 Exiting
+13513 21:39:56.277272 Original lockfile contents: ['13513\n']
+13513 21:39:56.278517 Exiting as we could obtain the lock
+13592 21:43:46.874367 --- Starting bitbake server pid 13592 at 2021-05-16 21:43:46.874348 ---
+13592 21:43:46.880108 Started bitbake server pid 13592
+13592 21:43:46.880288 Entering server connection loop
+13592 21:43:46.880430 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+13592 21:43:46.881030 Processing Client
+13592 21:43:46.881062 Connecting Client
+13592 21:43:46.881331 Running command ['setFeatures', [2, 1]]
+13592 21:43:46.881401 Command Completed
+13592 21:43:46.881892 Running command ['updateConfig', {'abort': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SSH_AGENT_PID': '2030', 'PWD': '/home/florian/build-ynov-rpi', 'LOGNAME': 'florian', 'HOME': '/home/florian', 'BBPATH': '/home/florian/build-ynov-rpi', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'USER': 'florian', 'PATH': '/home/florian/yocto/poky/scripts:/home/florian/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/florian-G3-3500:@/tmp/.ICE-unix/2065,unix/florian-G3-3500:/tmp/.ICE-unix/2065', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LC_ADDRESS': 'fr_FR.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'fr_FR.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'LC_MONETARY': 'fr_FR.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'florian', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'fr_FR.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VTE_VERSION': '6003', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/180e8b4b_29d8_4dfa_b5e8_45eaafa44418', 'INVOCATION_ID': 'cecc1698a8c14fe6bcd22794e3afaede', 'MANAGERPID': '1808', 'GJS_DEBUG_OUTPUT': 'stderr', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.93', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TIME': 'fr_FR.UTF-8', 'JOURNAL_STREAM': '8:55551', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/florian/build-ynov-rpi', 'LC_NUMERIC': 'fr_FR.UTF-8', 'OLDPWD': '/home/florian/yocto', '_': '/home/florian/yocto/poky/bitbake/bin/bitbake-layers'}, ['/home/florian/yocto/poky/bitbake/bin/bitbake-layers', 'add-layer', '/home/florian/bachelor-embedded-linux/labs/lab2/meta-ynov-rpi4']]
+13592 21:43:47.107879 Command Completed
+13592 21:43:47.108279 Running command ['parseConfiguration']
+13592 21:43:47.109845 Command Completed
+13592 21:43:47.110013 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+13592 21:43:47.110153 Command Completed
+13592 21:43:47.110284 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+13592 21:43:47.110397 Command Completed
+13592 21:43:47.115028 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13592 21:43:47.115155 Command Completed
+13592 21:43:47.115267 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13592 21:43:47.115418 Command Completed
+13592 21:43:47.116312 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13592 21:43:47.116400 Command Completed
+13592 21:43:47.116486 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13592 21:43:47.116606 Command Completed
+13592 21:43:47.118228 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13592 21:43:47.118339 Command Completed
+13592 21:43:47.118493 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13592 21:43:47.118631 Command Completed
+13592 21:43:47.119085 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13592 21:43:47.119177 Command Completed
+13592 21:43:47.119282 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13592 21:43:47.119393 Command Completed
+13592 21:43:47.119746 Running command ['clientComplete']
+13592 21:43:47.119807 Command Completed
+13592 21:43:47.120302 Processing Client
+13592 21:43:47.120337 Disconnecting Client
+13592 21:43:47.120451 No timeout, exiting.
+13592 21:43:47.220697 Exiting
+13592 21:43:47.233281 Original lockfile contents: ['13592\n']
+13592 21:43:47.234716 Exiting as we could obtain the lock
+13709 21:48:18.872412 --- Starting bitbake server pid 13709 at 2021-05-16 21:48:18.872394 ---
+13709 21:48:18.877935 Started bitbake server pid 13709
+13709 21:48:18.878090 Entering server connection loop
+13709 21:48:18.878216 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+13709 21:48:18.878823 Processing Client
+13709 21:48:18.878856 Connecting Client
+13709 21:48:18.879107 Running command ['setFeatures', [2, 1]]
+13709 21:48:18.879178 Command Completed
+13709 21:48:18.879678 Running command ['updateConfig', {'abort': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SSH_AGENT_PID': '2030', 'PWD': '/home/florian/build-ynov-rpi', 'LOGNAME': 'florian', 'HOME': '/home/florian', 'BBPATH': '/home/florian/build-ynov-rpi', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'USER': 'florian', 'PATH': '/home/florian/yocto/poky/scripts:/home/florian/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/florian-G3-3500:@/tmp/.ICE-unix/2065,unix/florian-G3-3500:/tmp/.ICE-unix/2065', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LC_ADDRESS': 'fr_FR.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'fr_FR.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'LC_MONETARY': 'fr_FR.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'florian', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'fr_FR.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VTE_VERSION': '6003', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/180e8b4b_29d8_4dfa_b5e8_45eaafa44418', 'INVOCATION_ID': 'cecc1698a8c14fe6bcd22794e3afaede', 'MANAGERPID': '1808', 'GJS_DEBUG_OUTPUT': 'stderr', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.93', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TIME': 'fr_FR.UTF-8', 'JOURNAL_STREAM': '8:55551', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/florian/build-ynov-rpi', 'LC_NUMERIC': 'fr_FR.UTF-8', 'OLDPWD': '/home/florian/yocto', '_': '/home/florian/yocto/poky/bitbake/bin/bitbake-layers'}, ['/home/florian/yocto/poky/bitbake/bin/bitbake-layers', 'add-layer', '/home/florian/bachelor-embedded-linux/labs/lab2/meta-ynov-rpi4']]
+13709 21:48:19.104352 Command Completed
+13709 21:48:19.104799 Running command ['parseConfiguration']
+13709 21:48:19.106413 Command Completed
+13709 21:48:19.106586 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+13709 21:48:19.106721 Command Completed
+13709 21:48:19.106854 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+13709 21:48:19.106966 Command Completed
+13709 21:48:19.111612 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13709 21:48:19.111740 Command Completed
+13709 21:48:19.111896 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13709 21:48:19.112073 Command Completed
+13709 21:48:19.112999 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13709 21:48:19.113111 Command Completed
+13709 21:48:19.113264 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13709 21:48:19.113410 Command Completed
+13709 21:48:19.115066 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13709 21:48:19.115178 Command Completed
+13709 21:48:19.115263 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13709 21:48:19.115375 Command Completed
+13709 21:48:19.115761 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13709 21:48:19.115847 Command Completed
+13709 21:48:19.115925 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13709 21:48:19.116031 Command Completed
+13709 21:48:19.117135 Running command ['parseConfiguration']
+13709 21:48:19.117429 Command Completed
+13709 21:48:19.117646 Running command ['clientComplete']
+13709 21:48:19.117709 Command Completed
+13709 21:48:19.118230 Processing Client
+13709 21:48:19.118266 Disconnecting Client
+13709 21:48:19.118389 No timeout, exiting.
+13709 21:48:19.218731 Exiting
+13709 21:48:19.236925 Original lockfile contents: ['13709\n']
+13709 21:48:19.238137 Exiting as we could obtain the lock
+13884 21:54:25.688780 --- Starting bitbake server pid 13884 at 2021-05-16 21:54:25.688762 ---
+13884 21:54:25.694294 Started bitbake server pid 13884
+13884 21:54:25.694446 Entering server connection loop
+13884 21:54:25.694576 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+13884 21:54:25.695188 Processing Client
+13884 21:54:25.695219 Connecting Client
+13884 21:54:25.695461 Running command ['setFeatures', [2, 1]]
+13884 21:54:25.695529 Command Completed
+13884 21:54:25.696068 Running command ['updateConfig', {'abort': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': None, 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SSH_AGENT_PID': '2030', 'PWD': '/home/florian/build-ynov-rpi', 'LOGNAME': 'florian', 'HOME': '/home/florian', 'BBPATH': '/home/florian/build-ynov-rpi', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'USER': 'florian', 'PATH': '/home/florian/yocto/poky/scripts:/home/florian/yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/florian-G3-3500:@/tmp/.ICE-unix/2065,unix/florian-G3-3500:/tmp/.ICE-unix/2065', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LC_ADDRESS': 'fr_FR.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'fr_FR.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'LC_MONETARY': 'fr_FR.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'x11', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'WINDOWPATH': '2', 'USERNAME': 'florian', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'fr_FR.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VTE_VERSION': '6003', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/180e8b4b_29d8_4dfa_b5e8_45eaafa44418', 'INVOCATION_ID': 'cecc1698a8c14fe6bcd22794e3afaede', 'MANAGERPID': '1808', 'GJS_DEBUG_OUTPUT': 'stderr', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GNOME_TERMINAL_SERVICE': ':1.93', 'DISPLAY': ':1', 'SHLVL': '1', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TIME': 'fr_FR.UTF-8', 'JOURNAL_STREAM': '8:55551', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDMSESSION': 'ubuntu', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/florian/build-ynov-rpi', 'LC_NUMERIC': 'fr_FR.UTF-8', 'OLDPWD': '/home/florian/yocto', '_': '/home/florian/yocto/poky/bitbake/bin/bitbake-layers'}, ['/home/florian/yocto/poky/bitbake/bin/bitbake-layers', 'add-layer', '/home/florian/yocto/meta-virtualization/']]
+13884 21:54:25.958696 Command Completed
+13884 21:54:25.959079 Running command ['parseConfiguration']
+13884 21:54:25.960748 Command Completed
+13884 21:54:25.960908 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBMULTICONFIG',), {}]
+13884 21:54:25.961043 Command Completed
+13884 21:54:25.961182 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBPATH',), {}]
+13884 21:54:25.961297 Command Completed
+13884 21:54:25.966259 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13884 21:54:25.966380 Command Completed
+13884 21:54:25.966545 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13884 21:54:25.966712 Command Completed
+13884 21:54:25.968342 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13884 21:54:25.968438 Command Completed
+13884 21:54:25.968528 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13884 21:54:25.968642 Command Completed
+13884 21:54:25.969421 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13884 21:54:25.969532 Command Completed
+13884 21:54:25.969618 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13884 21:54:25.969731 Command Completed
+13884 21:54:25.970166 Running command ['dataStoreConnectorCmd', 0, 'getVar', ('BBLAYERS',), {}]
+13884 21:54:25.970277 Command Completed
+13884 21:54:25.970362 Running command ['dataStoreConnectorVarHistCmd', 0, 'get_variable_items_files', ('BBFILE_COLLECTIONS',), {}]
+13884 21:54:25.970475 Command Completed
+13884 21:54:25.971637 Running command ['parseConfiguration']
+13884 21:54:25.971948 Command Completed
+13884 21:54:25.972076 Running command ['clientComplete']
+13884 21:54:25.972128 Command Completed
+13884 21:54:25.972638 Processing Client
+13884 21:54:25.972674 Disconnecting Client
+13884 21:54:25.972795 No timeout, exiting.
+13884 21:54:26.073091 Exiting
+13884 21:54:26.093307 Original lockfile contents: ['13884\n']
+13884 21:54:26.094574 Exiting as we could obtain the lock
